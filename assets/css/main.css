@@ -2,65 +2,161 @@ body {
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
-    height: 1500px;
+    height: 1300px;
     width: 100%;
+    justify-content: top;
+    align-items: center;
 }
 .header {
-    display: none;
     width: 100%;
-    height: 3em;
+    height: 3%;
     background-color: #ececec;
     border-bottom:1px solid #dddddd;
-    justify-content: space-around;
-    align-items: center;
 
 }
-.principal {
-    width: 100%;
-    height: 90%;
-    display:flex;
-}
-.principalDiv {
+.menu {
     width: 100%;
     height: 100%;
-}
-.principalDiv-text {
-    width: 100%;
-    height: 20%;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
 }
-.textTitle {
-    color: #db4437;
-    text-shadow: 0px 0px 1px #272727;
-    font-size: 2em;
-    font-weight: bold;
+.menuList {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
     font-family: monospace;
-    transition: 0.5s;
+    padding-right: 50px;
 }
-.textTitle:hover {
-    text-shadow: 0px 0px 3px;
+.menuList-item {
+    width: 20%;
+    height: 100%;
+    font-size: 1.5em;
+    transition: 0.250s;
+    text-align: end;
+    
 }
-.textSubtitle {
-
+a {
+    text-decoration: none;
+    color: #5e5e5e;
+    transition: 0.250s;
 }
-.textSubtitle-paragraph {
-
+a:hover {
+    font-size: 0.95em;
+    font-weight: bold;
 }
-.principalDiv-images {
-
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    align-items: center;
+    justify-content: flex-start;
 }
-.imagesDiv {
-
+.pageDescription {
+    display: flex;
+    width: 100%;
+    height: 13%;
+    align-items: flex-start;
+    justify-content: space-around;
 }
-.imageParagraph {
-
+.titleSection {
+    display: flex;
+    width: 40%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titleSection-title {
+    color: #db4437;
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: bold;;
+}
+.descriptionSection {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+}
+.descriptionSection-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 36%;
+    font-size: 2em;
+    color: #f4b400;
+    font-family: monospace;
+    font-weight: bold;;
+}
+.descriptionSection-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 55%;
+    font-size: 1.2em;
+    color: #888888;
+    font-family: monospace;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 70%;
+    justify-content: space-around;
+    align-items:initial;
+}
+.memberArea {
+    width: 280px;
+    height: 350px;
+    display: flex;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.areaTwo {
+    padding-top: 100px;
+    margin-bottom: -100px;
+}
+.areaFive {
+    padding-top: 100px;
+    margin-bottom: -100px;
+}
+.memberImage {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 3px #272727;
+    transition: 0.225s;
+    margin-bottom: 10px;
+}
+.memberImage:hover {
+    width: 99%;
+    height: 99%;
+    box-shadow: 0px 0px 0px;
+}
+.memberName {
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight:bold;
+}
+.imageLegend {
+    width: 12%;
+    height: 50%;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items:flex-end;
+    font-family: monospace;
+    color: #686868;
+    font-size: 1.1em;
 }
 .footer {
     display: flex;
     width: 100%;
-    height: 8%;
+    height: 3.5%;
     background-color: #ececec;
     border-top:1px solid #dddddd;
     justify-content: space-around;
@@ -76,8 +172,77 @@ body {
 }
 
 @media(max-width: 360px) {
-
+    body {
+        height: 1500px;
+    }
+    .pageDescription {
+        height: 30%;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+    .titleSection {
+        width: auto;
+    }
+    .descriptionSection {
+        width: 75%;
+        border-left: solid 1px #db4437;
+        padding-left: 10px;
+    }
+    main {
+        height: 100%;
+    }
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 80%;
+        justify-content: space-around;
+        align-items:initial;
+    }
+    .memberArea {
+        width: 50%;
+        height: 15%;
+        display: flex;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        justify-content: center;
+    }
+    .areaOne {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .areaTwo {
+        padding-top: 120px;
+        margin-bottom: 0px;
+    }
+    .areaThree {
+        margin-top: -100px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .areaFor {
+        padding-top: 20px;
+        margin-bottom: 0px;
+    }
+    .areaFive {
+        margin-top: -100px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .areaSix {
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+    .memberImage {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 3px #272727;
+        transition: 0.225s;
+        margin-bottom: 10px;
+    }
     .footer {
+        height: 5%;
         margin-bottom: -60px;
     }
 }
